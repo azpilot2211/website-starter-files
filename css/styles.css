@@ -1,3 +1,4 @@
+/******* FONTS ********/
 @font-face {
     font-family: 'forumregular';
     src: url('/assets/fonts/forum-regular-webfont.woff2') format('woff2'),
@@ -113,14 +114,18 @@
     object-fit: cover;
   }
 
-
   a {
     text-decoration: none;
     color: inherit;
+    font-family: var(--ff-meta);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: var(--fs-p);
+    color: var(--color-blue);
   }
 
   a:hover {
-    color: var(--color-blue);
+    color: var(--color-black);
   }
 
   h1,
