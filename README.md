@@ -12,9 +12,6 @@ This HTML starter page showcases various responsive text elements styled using d
 - **css/styles.css**: The CSS file containing styles for fonts, colors, layout, and responsiveness.
 - **assets/fonts**: The fonts in woff2, woff format.
 
-![alt text](https://github.com/azpilot2211/website-starter-files/blob/main/images/Screenshot%202024-05-05%20092727.png?raw=true)
-
-![alt text](https://github.com/azpilot2211/website-starter-files/blob/main/images/Screenshot%202024-05-05%20092429.png?raw=true)
 
 ## HTML Content
 
@@ -52,6 +49,12 @@ The CSS file includes media queries for responsive design, adjusting layout and 
 
 - Images used in the project are located in the `images` directory.
 - Custom fonts are located in the `assets/fonts` directory.
+
+## Preview Responsiveness  
+
+![alt text](https://github.com/azpilot2211/website-starter-files/blob/main/images/Screenshot%202024-05-05%20092727.png?raw=true)
+
+![alt text](https://github.com/azpilot2211/website-starter-files/blob/main/images/Screenshot%202024-05-05%20092429.png?raw=true)
 
 ## Author
 
