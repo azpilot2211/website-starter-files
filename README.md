@@ -4,7 +4,7 @@ This is a README file for the Website Starter HTML page.
 
 ## Description
 
-This HTML page showcases various text elements styled using different fonts and CSS properties. It also includes buttons and an image.
+This HTML starter page showcases various responsive text elements styled using different fonts and CSS properties. It also includes buttons and an image all responsive.
 
 ## File Structure
 
@@ -16,8 +16,8 @@ This HTML page showcases various text elements styled using different fonts and 
 
 The HTML file (`index.html`) contains the following elements:
 
-- Headings (`h1` to `h6`) styled with different fonts.
-- Paragraphs (`p`) with varying font styles.
+- Headings (`h1` to `h6`) styled with different fonts and responsive text sizes.
+- Paragraphs (`p`) with varying font styles and responsive sizes.
 - Buttons (`btn`) with different background colors.
 - An image (`img`) displayed with responsive styling.
 
