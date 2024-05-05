@@ -110,10 +110,9 @@
   img{
     width: 100%;
     height: auto;
-    max-width: 50rem;
     min-width: 1rem;
     box-sizing:border-box;
-    object-fit: contain;
+    object-fit: cover;
   }
 
 
