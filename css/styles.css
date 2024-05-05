@@ -197,6 +197,7 @@
 
   .buttons{
     display: flex;
+    width: 97%;
     gap: .7rem;
     flex-wrap: wrap;
     font-family: var(--ff-meta);
