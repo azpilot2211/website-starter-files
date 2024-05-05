@@ -62,14 +62,6 @@
   }
   
   :root {
-    /* --color-blue: hsl(223, 100%, 54%);
-    --color-light-blue: hsl(219, 89%, 93%);
-    --color-tan: hsl(29, 57%, 91%);
-    --color-pink: hsl(357, 59%, 93%);
-    --color-grey: hsl(240, 8%, 93%);
-    --color-black: hsl(0, 2%, 12%);
-    --color-white: hsl(0, 20%, 95%); */
-
     --color-blue: hsl(210, 100%, 40%);
     --color-silver: hsl(0, 0%, 90%);
     --color-grey: hsl(240, 2%, 26%);
