@@ -194,6 +194,9 @@
     display: flex;
     gap: .7rem;
     flex-wrap: wrap;
+    font-family: var(--ff-meta);
+    text-transform: uppercase;
+    font-size: var(--fs-p);
   }
 
   .btn{
