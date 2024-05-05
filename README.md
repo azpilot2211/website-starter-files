@@ -1,4 +1,4 @@
-# Design-1 HTML Page
+# Responsive starter files for website 
 
 This is a sample README file for the Website Starter HTML page.
 
