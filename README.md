@@ -1,6 +1,6 @@
 # Responsive starter files for website 
 
-This is a sample README file for the Website Starter HTML page.
+This is a README file for the Website Starter HTML page.
 
 ## Description
 
