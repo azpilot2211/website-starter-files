@@ -102,7 +102,7 @@
     line-height: 1.5;
     font-family: var(--ff-body);
     margin: 3%;
-    width: min(1920px, calc(100% -3%));
+    width: min(1920px, 97%);
     text-wrap: balance;
   }
 
