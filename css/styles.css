@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'forumregular';
+    src: url('/assets/fonts/forum-regular-webfont.woff2') format('woff2'),
+         url('forum-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('/assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('/assets/fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('/assets/fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('/assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'playpen';
+  src: url('/assets/fonts/playpensans-variablefont_wght-webfont.woff2') format('woff2'),
+       url('/assets/fonts/playpensans-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'antonio';
+  src: url('/assets/fonts/antonio-variablefont_wght-webfont.woff2') format('woff2'),
+       url('/assets/fonts/antonio-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dida';
+  src: url('/assets/fonts/didactgothic-regular-webfont.woff2') format('woff2'),
+       url('/assets/fonts/didactgothic-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    /* --color-blue: hsl(223, 100%, 54%);
+    --color-light-blue: hsl(219, 89%, 93%);
+    --color-tan: hsl(29, 57%, 91%);
+    --color-pink: hsl(357, 59%, 93%);
+    --color-grey: hsl(240, 8%, 93%);
+    --color-black: hsl(0, 2%, 12%);
+    --color-white: hsl(0, 20%, 95%); */
+
+    --color-blue: hsl(210, 100%, 40%);
+    --color-silver: hsl(0, 0%, 90%);
+    --color-grey: hsl(240, 2%, 26%);
+    --color-white: hsl(240, 11%, 96%);
+    --color-orange: hsl(24, 100%, 48%);
+    --color-black: hsla(0, 0%, 0%, 0.825);
+  
+    --ff-heading: "forumregular", serif;
+    --ff-body: "robotoregular",  sans-serif;
+    --ff-body-bold: "robotobold",  sans-serif;
+    --ff-body-light: "robotolight",  sans-serif;
+
+    --ff-cta: "antonio", sans-serif;
+    --ff-meta: "dida", sans-serif;
+    --ff-italic: "playpen", cursive;
+  
+    --fs-h1: clamp(3rem, 8vw + 1rem, 6.5rem);
+    --fs-h2: clamp(2.5rem, 6vw + 0.5rem, 5.5rem);
+    --fs-h3: clamp(2rem, 5vw, 4.5rem);
+    --fs-h4: clamp(1.5rem, 4vw, 3.5rem);
+    --fs-h5: clamp(1.25rem, 3vw, 3rem);
+    --fs-h6: clamp(1rem, 2.5vw, 2.5rem);
+    --fs-p: clamp(1rem, 2vw, 1.5rem);
+
+    --transition: all 0.2s ease;
+  }
+
+  body {  
+    background-color: var(--color-white);
+    color: var(--color-black);
+    line-height: 1.5;
+    font-family: var(--ff-body);
+    margin: 3% auto;
+    width: min(1920px, calc(80% + 100px));
+    text-wrap: balance;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+    max-width: 50rem;
+    min-width: 1rem;
+    box-sizing:border-box;
+    object-fit: contain;
+  }
+
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover {
+    color: var(--color-blue);
+  }
+
+  h1,
+  h2, 
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--ff-heading);
+    margin-bottom: 1.25rem;
+  }
+
+  h1 {
+    font-size: var(--fs-h1);
+    line-height: .85;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: var(--fs-h2);
+    line-height: .85;
+  }
+  
+  h3 {
+    font-size: var(--fs-h3);
+    line-height: .95;
+  }
+  
+  h4 {
+    font-size: var(--fs-h4);
+    line-height: 1;
+  }
+  
+  h5 {
+    font-size: var(--fs-h5);
+    line-height: 1;
+  }
+  
+  h6 {
+    font-size: var(--fs-h6);
+    line-height: 1.1;
+  }
+  
+  p {
+    font-size: var(--fs-p);
+    line-height: 1.2;
+  }
+  
+  p.bold{
+    font-family: var(--ff-body-bold);
+  }
+
+  p.light{
+    font-family: var(--ff-body-light);
+  }
+
+  p.antonio, h1.antonio{
+    font-family: var(--ff-cta);
+    line-height: 1.1;
+  }
+
+  p.dida{
+    font-family: var(--ff-meta);
+  }
+
+  p.playpen{
+    font-family: var(--ff-italic);
+  }
+
+  .buttons{
+    display: flex;
+    gap: .7rem;
+    flex-wrap: wrap;
+  }
+
+  .btn{
+    padding: .5rem 1rem;
+    width: fit-content;
+    text-align: center;
+    border-radius: 0.5rem;
+    outline: 1px solid var(--color-black);
+    text-wrap: nowrap;
+    font-size: var(--fs-p);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+
+  .btn:hover{
+    transform: scale(1.05);
+    opacity: .9;
+  }
+
+  .blue{
+    background: var(--color-blue);
+    color: var(--color-white);
+  }
+
+  .silver{
+    background: var(--color-silver);
+    color: var(--color-black);
+  }
+
+  .pink{
+    background: var(--color-pink);
+    color: var(--color-black);
+  }
+
+  .grey{
+    background: var(--color-grey);
+    color: var(--color-white);
+  }
+
+  .black{
+    background: var(--color-black);
+    color: var(--color-white);
+  }
+
+  .white{
+    background: var(--color-white);
+    color: var(--color-black);
+  }
+
+
+
+  /*****************MEDIA QUERIES*****************/
+
+  @media screen and (max-width: 400px){
+
+    body{
+      margin: 3% auto;
+      width: min(1000px, calc(90% + 10px));
+    }
+
+  } 
