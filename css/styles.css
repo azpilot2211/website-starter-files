@@ -62,6 +62,7 @@
   }
   
   :root {
+    /******* COLORS ********/
     --color-blue: hsl(210, 100%, 40%);
     --color-silver: hsl(0, 0%, 90%);
     --color-grey: hsl(240, 2%, 26%);
@@ -69,15 +70,16 @@
     --color-orange: hsl(24, 100%, 48%);
     --color-black: hsla(0, 0%, 0%, 0.825);
   
+    /******* FONT FAMILY ********/
     --ff-heading: "forumregular", serif;
     --ff-body: "robotoregular",  sans-serif;
     --ff-body-bold: "robotobold",  sans-serif;
     --ff-body-light: "robotolight",  sans-serif;
-
     --ff-cta: "antonio", sans-serif;
     --ff-meta: "dida", sans-serif;
     --ff-italic: "playpen", cursive;
   
+    /******* FONT SIZES ********/
     --fs-h1: clamp(3rem, 8vw + 1rem, 6.5rem);
     --fs-h2: clamp(2.5rem, 6vw + 0.5rem, 5.5rem);
     --fs-h3: clamp(2rem, 5vw, 4.5rem);
@@ -86,8 +88,12 @@
     --fs-h6: clamp(1rem, 2.5vw, 2.5rem);
     --fs-p: clamp(1rem, 2vw, 1.5rem);
 
+    /******* TRANSITIONS ********/
     --transition: all 0.2s ease;
   }
+
+
+  /******* GENERAL STYLES ********/
 
   body {  
     background-color: var(--color-white);
