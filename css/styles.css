@@ -102,8 +102,8 @@
     color: var(--color-black);
     line-height: 1.5;
     font-family: var(--ff-body);
-    margin: 3% auto;
-    width: min(1920px, calc(80% + 100px));
+    margin: 3%;
+    width: min(1920px, calc(100% -3%));
     text-wrap: balance;
   }
 
@@ -252,8 +252,11 @@
   @media screen and (max-width: 400px){
 
     body{
-      margin: 3% auto;
-      width: min(1000px, calc(90% + 10px));
+      width: min(400px, calc(100% - 3%));
+    }
+
+    img{
+      max-width: calc(97%);
     }
 
   } 
