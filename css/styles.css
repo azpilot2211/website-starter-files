@@ -197,8 +197,10 @@
 
   .buttons{
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 97%;
-    gap: .7rem;
+    gap: 1rem;
     flex-wrap: wrap;
     font-family: var(--ff-meta);
     text-transform: uppercase;
