@@ -1,0 +1,281 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  color-scheme: light dark;
+}
+
+:first-child{
+    margin-block-start: 0;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+
+ul[class],
+ol[class] {
+  list-style: '';
+  margin: 0;
+  padding: 0;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+    
+@media (prefers-reduced-motion: no-preference) {
+    html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    }
+}
+
+
+
+:root {
+    --ff-headline: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --ff-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    
+    --transition: all 0.3s ease-in-out;
+    --transition-fast: all 0.15s ease-in-out;
+    
+    --color-primary: #127765;
+    --color-secondary: #435151;
+    --color-lt-green: #CEDF98;
+    --color-black: #3C4647;
+    --color-white: hsl(0, 0%, 100%);
+    --background: hsl(0, 0%, 95%);
+    --color-gray: hsl(0, 2%, 67%);
+
+    /* Base font sizes */
+    --font-body: 18px;
+    --font-xxl: 3em;    /* 54px - Extra large for emphasis */
+    --font-xl: 2.75em;  /* 49.5px - Large for emphasis */
+    --font-h1: 2.5em;   /* 45px */
+    --font-h2: 2em;     /* 36px */
+    --font-h3: 1.75em;  /* 31.5px */
+    --font-h4: 1.5em;   /* 27px */
+    --font-h5: 1.25em;  /* 22.5px */
+    --font-h6: 1em;     /* 18px */
+    --font-p: 1em;      /* 18px */
+
+    --fw-light: 200;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-bolder: 900;
+
+    /* Line heights */
+    --line-height-body: 1.6;
+    --line-height-xxl: 1.1;
+    --line-height-xl: 1.1;
+    --line-height-h1: 1.1;
+    --line-height-h2: 1.2;
+    --line-height-h3: 1.3;
+    --line-height-h4: 1.4;
+    --line-height-h5: 1.5;
+    --line-height-h6: 1.5;
+    --line-height-p: 1.4;
+
+    /* Letter spacing */
+    --letter-spacing-body: 0.5px;
+    --letter-spacing-xxl: -0.6px;
+    --letter-spacing-xl: -0.5px;
+    --letter-spacing-h1: -0.5px;
+    --letter-spacing-h2: -0.4px;
+    --letter-spacing-h3: -0.3px;
+    --letter-spacing-h4: -0.2px;
+    --letter-spacing-h5: -0.1px;
+    --letter-spacing-h6: 0px;
+    --letter-spacing-p: 0.3px;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-primary: #727776;
+        --color-secondary: #3acccc;
+        --color-lt-green: #cad89c;
+        --color-black: #c7ecf0;
+        --color-white: hsl(0, 9%, 18%);
+        --background: hsl(0, 6%, 25%);
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.xxl {
+    font-size: var(--font-xxl);
+    font-family: var(--ff-headline);
+    line-height: var(--line-height-xxl);
+    letter-spacing: var(--letter-spacing-xxl);
+}
+
+.xl {
+    font-size: var(--font-xl);
+    font-family: var(--ff-headline);
+    line-height: var(--line-height-xl);
+    letter-spacing: var(--letter-spacing-xl);
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.bolder{
+    font-weight: 900;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: var(--font-h1);
+    line-height: var(--line-height-h1);
+    letter-spacing: var(--letter-spacing-h1);
+    font-weight: var(--fw-bolder);
+    font-family: var(--ff-headline);
+}
+
+h2 {
+    font-size: var(--font-h2);
+    line-height: var(--line-height-h2);
+    letter-spacing: var(--letter-spacing-h2);
+    font-weight: var(--fw-bold);
+}
+
+h3 {
+    font-size: var(--font-h3);
+    line-height: var(--line-height-h3);
+    letter-spacing: var(--letter-spacing-h3);
+    font-weight: var(--fw-bold);
+}
+
+h4 {
+    font-size: var(--font-h4);
+    line-height: var(--line-height-h4);
+    letter-spacing: var(--letter-spacing-h4);
+}
+
+h5 {
+    font-size: var(--font-h5);
+    line-height: var(--line-height-h5);
+    letter-spacing: var(--letter-spacing-h5);
+}
+
+h6 {
+    font-size: var(--font-h6);
+    line-height: var(--line-height-h6);
+    letter-spacing: var(--letter-spacing-h6);
+}
+
+p, li {
+    font-size: var(--font-p);
+    line-height: var(--line-height-p);
+    letter-spacing: var(--letter-spacing-p);
+}
+
+/* Smaller screens adjustments */
+@media (max-width: 768px) {
+    :root {
+        --font-body: 16px;
+        --font-xxl: 2.5em; /* 40px */
+        --font-xl: 2.25em; /* 36px */
+        --font-h1: 2.2em;
+        --font-h2: 1.8em;
+        --font-h3: 1.6em;
+        --font-h4: 1.4em;
+        --font-h5: 1.2em;
+        --font-h6: 1em;
+        --font-p: 0.9em;
+
+        --line-height-body: 1.5;
+        --letter-spacing-body: 0.4px;
+        --letter-spacing-xxl: -0.4px;
+        --letter-spacing-xl: -0.4px;
+    }
+}
+
+/* Extra-small screens adjustments */
+@media (max-width: 480px) {
+    :root {
+        --font-body: 14px;
+        --font-xxl: 2.2em; /* 30px */
+        --font-xl: 2em;    /* 28px */
+        --font-h1: 1.9em;
+        --font-h2: 1.6em;
+        --font-h3: 1.4em;
+        --font-h4: 1.2em;
+        --font-h5: 1em;
+        --font-h6: 0.9em;
+        --font-p: 0.8em;
+
+        --line-height-body: 1.5;
+        --letter-spacing-body: 0.3px;
+        --letter-spacing-xxl: -0.3px;
+        --letter-spacing-xl: -0.3px;
+    }
+}
+
+/* Applying variables */
+body {
+    font-family: var(--ff-body);
+    font-size: var(--font-body);
+    line-height: var(--line-height-body);
+    letter-spacing: var(--letter-spacing-body);
+    margin: 0;
+}
+
+section{
+    padding-block: 2%;
+    padding-inline: 5%;
+}
